@@ -1,4 +1,3 @@
-
 // একটি n integer দেওয়া থাকবে।
 
 // তোমার কাজ:
@@ -9,8 +8,6 @@
 // even হলে "Even" print করবে
 // odd হলে "Odd" print করবে
 // শেষে মোট কতগুলো even এবং কতগুলো odd আছে সেটা দেখাবে।
-
-
 
 package main
 
@@ -27,11 +24,11 @@ func number(n int) any {
 	for i := 1; i <= n; i++ {
 
 		if i%2 == 0 {
-			oddCount += 1
-			evenOdd = "Odd"
-		} else {
 			evenCount += 1
 			evenOdd = "Even"
+		} else {
+			oddCount += 1
+			evenOdd = "Odd"
 		}
 
 		switch evenOdd {
